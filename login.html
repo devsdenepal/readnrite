@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>readnrite</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png"> 
+    <!-- FontAwesome CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head> 
+
+<body>
+    <nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>                        
+			</button>
+			<a class="navbar-brand" href="#">readnrite</a>
+		  </div>
+		  <div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="#">Home</a></li>
+			  <li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				  <li><a href="./profile.html">Profile</a></li>
+				  <li><a href="./posts.html">Posts</a></li>
+				  <li><a href="./about-us.html">About us</a></li>
+				</ul>
+			  </li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			  <!-- <li><a href="./login"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
+			  <!-- <li><a href="/logout.html"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li> -->
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+		
+    <div class="container">
+        <h2>Signup to continue</h2>
+        <form action="" id="loginForm">
+          <div class="form-group">
+            <label for="shrtnm">Username</label>
+            <input type="text" class="form-control" id="shrtnm" placeholder="Enter username" name="shortname">
+          </div>
+          <div class="form-group">
+            <label for="flnm">Full Name</label>
+            <input type="text" class="form-control" id="flnm" placeholder="Enter full name" name="author_name">
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-default">Signup</button>
+        </form>
+      </div>
+    <!-- Bootstrap Javascript -->          
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/login.js"></script>    
+</body>
