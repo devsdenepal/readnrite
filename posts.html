@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="shortcut icon" href="images/logo.png"> 
     <!-- FontAwesome CSS-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -14,24 +15,24 @@
 </head> 
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="avbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
 		  <div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="./index.htmlmyNavbar">
 			  <span class="icon-bar"></span>
 			  <span class="icon-bar"></span>
 			  <span class="icon-bar"></span>                        
 			</button>
-			<a class="navbar-brand" href="#">readnrite</a>
+			<a class="navbar-brand" href="./index.html">readnrite</a>
 		  </div>
 		  <div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
-			  <li class="active"><a href="#">Home</a></li>
+			  <li class="active"><a href="./index.html">Home</a></li>
 			  <li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu<span class="caret"></span></a>
+				<a class="dropdown-toggle" data-toggle="dropdown" href="./index.html">Menu<span class="caret"></span></a>
 				<ul class="dropdown-menu">
 				  <li><a href="./profile.html">Profile</a></li>
-				  <li><a href="./posts.html">Posts</a></li>
+				  <!-- <li><a href="./posts.html">Posts</a></li> -->
 				  <li><a href="./about-us.html">About us</a></li>
 				</ul>
 			  </li>
@@ -45,30 +46,15 @@
 	  </nav>
 		
 	  <div class="container">
-		<h2>Write Something...</h2>
-        <form action="" id="publishForm">
-          <div class="form-group">
-            <label for="title">Title</label>
-            <input type="text" class="form-control" id="title" placeholder="Title" name="title">
-          </div>
-          <div class="form-group">
-            <label for="content">Content</label>
-            <input type="text" class="form-control" id="content" placeholder="Type here.." name="content">
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="remember"> Remember me</label>
-          </div>
-          <button type="submit" class="btn btn-default">Publish</button>
-        </form>
-      </div>
+
     </div>
-<div class="w3-card-4" id="api-data"></div>
+
 
     <!-- Bootstrap Javascript -->          
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script src="js/app.js" type="module"></script>
-<script src="js/publish.js" type="module"></script>
+	<script src="js/app.js"></script>
+
 </body>
 </html> 
 
