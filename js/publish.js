@@ -17,11 +17,11 @@ function fetch_pages(){
         pages.forEach(function (page) {
           var pageDiv = document.createElement("div");
           pageDiv.style ="width:50%;padding: 5px; text-align:center; border: 1px solid black; border-radius:10px;"
-          pageDiv.innerHTML = "<h3 style='color:blue;>" + page.title + "</h3>" +
-            "<p><strong>URL:</strong> <a href='" + page.url + "'>" + page.url + "</a></p-->" +
-            "<p><strong></strong> " + page.description + "</p>" +
-            "<p><strong>Views:</strong> " + page.views + "</p>" +
-            "<p><strong>Can Edit:</strong> " + page.can_edit + "</p>";
+          pageDiv.innerHTML = "<h3 style='color:blue;'>" + page.title + "</h3>" +
+          "<p><strong>Views:</strong> " + page.views + "</p>" +
+            "<p><strong></strong> " + page.description + "</p>" ;
+          
+            // "<p><strong>Can Edit:</strong> " + page.can_edit + "</p>";
     
           container.appendChild(pageDiv);
         });;
