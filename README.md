@@ -11,3 +11,6 @@
 [dashboard](fetch user info from storage)---{action query,GET | POST}
     
 ```
+## Progress
+- [x] Get & maintain user access [signup]
+- [ ] Create a profile page
