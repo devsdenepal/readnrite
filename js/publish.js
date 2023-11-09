@@ -9,17 +9,27 @@ function fetch_pages(){
         var response = xhr.response;
         var result = response.result;
         var pages = result.pages;
-
+   
         // Create a container for the data
         var container = document.getElementById("api-data");
     
         // Loop through the pages and display the information in the div
         pages.forEach(function (page) {
           var pageDiv = document.createElement("div");
-          pageDiv.style ="width:50%;padding: 5px; text-align:center; border: 1px solid black; border-radius:10px;"
-          pageDiv.innerHTML = "<h3 style='color:blue;'>" + page.title + "</h3>" +
-          "<p><strong>Views:</strong> " + page.views + "</p>" +
-            "<p><strong></strong> " + page.description + "</p>" ;
+          var maxLength = 50; // Set your desired maximum length
+          var description = page.description;
+          if (page.description.length > maxLength) {
+            description = description.substring(0, maxLength) + '...';
+          }
+          pageDiv.className = "card";
+          pageDiv.style ="width: 18rem;";
+          pageDiv.innerHTML = `
+          <div class="card-body">
+    <h1 class="card-title"> ${page.title} </h1>
+    <p class="card-text"> ${description}</p> <a href="./edit.html?article=${page.url.replace("https://telegra.ph/","")}"" class="btn btn-primary">Edit</a><a href="./view.html?article=${page.url.replace("https://telegra.ph/","")}"" class="btn btn-secondary">View</a>
+    </div>
+  </div> 
+            `;
           
             // "<p><strong>Can Edit:</strong> " + page.can_edit + "</p>";
     
@@ -59,6 +69,7 @@ publishForm.addEventListener("submit", (e) => {
       }
     };
     xhr.send();
+    window.location.reload();
   }
 });
 fetch_pages()
