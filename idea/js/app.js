@@ -1,11 +1,12 @@
-export {short_name,username,access_token};
+export {short_name,username,user_key, user_id};
 var short_name = localStorage.getItem("short_name")
 var username = localStorage.getItem("author_name");
-var access_token = localStorage.getItem("access_token");
+var user_key = localStorage.getItem("user_key");
+var user_id = localStorage.getItem("user_id");
 function logout(){
 	localStorage.clear()
 }
-if(localStorage.getItem('access_token')== null){
+if(localStorage.getItem('user_key')== null){
 window.location.href = "./login.html"
 }
 else{

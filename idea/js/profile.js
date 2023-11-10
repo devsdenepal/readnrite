@@ -1,7 +1,7 @@
-import {access_token,username} from "./app.js";
+import {user_id,user_key,username} from "./app.js";
 document.getElementById("card_name").innerText = username;
 var xhr = new XMLHttpRequest();
-var url = `https://api.telegra.ph/getAccountInfo?access_token=${access_token}&fields=["short_name","page_count"]`; // Replace with your API endpoint
+var url = `../getUser?user_key=${user_id}`; // Replace with your API endpoint
 xhr.open("GET", url, true);
 xhr.responseType = "json";
 xhr.onload = function () {

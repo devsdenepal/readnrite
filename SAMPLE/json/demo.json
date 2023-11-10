@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "name of office": "TMO Ekantakuna",
+      "url": "http://ekantakunalicense.bagamati.gov.np/",
+      "email": "ekantakuna.license@gmail.com",
+      "contact": "9851336011",
+      "address": "Ekantakuna Lalitpur, Nepal",
+      "description": "Official Detail of Transport Management Office Ekantakuna"
+    },
+    {
+      "name of office": "TMO Jagati",
+      "url": "http://jagatilicense.bagamati.gov.np/",
+      "email": " tmodlbhaktapur@bagamati.gov.np",
+      "contact": "01-6615211",
+      "address": "Jagati Bhaktapur, Nepal",
+      "description": "Official Detail of Transport Management Office Jagati"
+    },
+    {
+      "name of office": "TMO Surkhet",
+      "url": "https://surkhettmo.dotm.gov.np/",
+      "email": "tmo.surkhet@gmail.com",
+      "contact": "083521120",
+      "address": "Surkhet Karnali, Nepal",
+      "description": "Official Detail of Transport Management Office Surkhet"
+    },
+    {
+      "name of office": "TMO Kaski",
+      "url": "https://dlo.gandaki.gov.np/",
+      "email": "drivinglicenseofficegandaki@gmail.com",
+      "contact": "9856038335",
+      "address": "Gandaki Pradesh, Nepal",
+      "description": "Official Detail of Transport Management Office Gandaki"
+    },
+    {
+      "name of office": "TMO Lumbini",
+      "url": "http://tmolicense.lumbini.gov.np/",
+      "email": "tmo.lumbinilicense@gmail.com",
+      "contact": "9857047758",
+      "address": "Rupandehi, Nepal",
+      "description": "Official Detail of Transport Management Office Lumbini"
+    },
+    {
+      "name of office": "TMO Thulobharyang",
+      "url": "http://thulobharyanglicense.bagamati.gov.np/",
+      "email": "dltmothulo@gmail.com",
+      "contact": "01-5249118",
+      "address": "Thulobharyang Kathmandu, Nepal",
+      "description": "Official Detail of Transport Management Office Thulobharyang Kathmandu"
+    },
+    {
+      "name of office": "TMO Baglung",
+      "url": "https://baglungtmo.dotm.gov.np/",
+      "email": "transmgbaglung@gmail.com",
+      "contact": "068-522133",
+      "address": "Baglung, Nepal",
+      "description": "Official Detail of Transport Management Office Baglung Nepal"
+    },
+    {
+      "name of office": "TMO Biratnagar",
+      "url": "https://morangtmso.dotm.gov.np/",
+      "email": "tmo.morang@gmail.com",
+      "contact": "021-421083",
+      "address": "Birtamod, Biratnagar, Nepal",
+      "description": "Official Detail of Transport Management Office Biratnagar Nepal"
+    }
+  ]
+}

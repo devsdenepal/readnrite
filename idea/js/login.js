@@ -13,7 +13,7 @@ loginForm.addEventListener("submit", (e) => {
     //   let shortname = prompt("Your shortname: ");
     // let author_name = prompt("Author name");
     var xhr = new XMLHttpRequest();
-    var url = `https://api.telegra.ph/createAccount?short_name=${shortname}&author_name=${author_name}`; // Replace with your API endpoint
+    var url = `../api/createAccount?short_name=${shortname}&author_name=${author_name}`; // Replace with your API endpoint
     xhr.open("GET", url, true);
     xhr.responseType = "json";
     xhr.onload = function () {
@@ -22,12 +22,12 @@ loginForm.addEventListener("submit", (e) => {
         var result = response.result;
         var shortName = result.short_name;
         var authorName = result.author_name;
-        var accessToken = result.access_token;
-        var authUrl = result.auth_url;
-        localStorage.setItem("shortname", shortName);
+        var accessToken = result.user_key;
+        var user_id = result.user_id;
+        localStorage.setItem("short_name", shortName);
         localStorage.setItem("author_name", authorName);
-        localStorage.setItem("access_token", accessToken);
-        localStorage.setItem("auth_url", authUrl);
+        localStorage.setItem("user_key", accessToken);
+        localStorage.setItem("user_id", user_id);
         window.location.href = "index.html";
       } else {
         console.error("XHR request failed with status code:", xhr.status);

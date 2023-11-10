@@ -1,7 +1,7 @@
-import {short_name,username,access_token} from "./app.js";
+import {short_name,username,user_key,user_id} from "./app.js";
 function fetch_pages(){
     var xhr = new XMLHttpRequest();
-    var url = `https://api.telegra.ph/getPageList?access_token=${access_token}`; // Replace with your API endpoint
+    var url = `../api/getPageList?user=${user_id}`; // Replace with your API endpoint
     xhr.open("GET", url, true);
     xhr.responseType = "json";
     xhr.onload = function () {
@@ -56,14 +56,14 @@ publishForm.addEventListener("submit", (e) => {
     //   let title = prompt("Your title: ");
     // let content = prompt("Author name");
     var xhr = new XMLHttpRequest();
-    var url = `https://api.telegra.ph/createPage?access_token=${access_token}&author_name=${username}&title=${title}&content=[{"tag":"p","children":["${content}"]}]`; // Replace with your API endpoint
+    var url = `../createPage?user_key=${user_key}&author_name=${username}&title=${title}&content=${content}&user_id=${user_id}`; // Replace with your API endpoint
     xhr.open("GET", url, true);
     xhr.responseType = "json";
     xhr.onload = function () {
       if (xhr.status === 200) {
         var response = xhr.response;
         var result = response.result;
-        var url = result.url;
+        // var url = result.url;
       } else {
         console.error("XHR request failed with status code:", xhr.status);
       }
